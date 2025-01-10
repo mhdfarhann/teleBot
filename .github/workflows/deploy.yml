@@ -7,30 +7,25 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Menjalankan action di lingkungan Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
-      # Checkout kode dari repository
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Setup Node.js (pastikan versi Node.js yang sesuai dengan proyek Anda)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Sesuaikan dengan versi Node.js yang Anda gunakan
+          node-version: '18'
 
-      # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Build aplikasi React
       - name: Build the app
         run: npm run build
 
-      # Deploy ke GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Token untuk autentikasi
-          publish_dir: ./dist  # Direktori tempat hasil build proyek Anda
+          github_token: ${{ secrets.GH_TOKEN }}  # Menggunakan secret GH_TOKEN yang sudah ditambahkan
+          publish_dir: ./dist
