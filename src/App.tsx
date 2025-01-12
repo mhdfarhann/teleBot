@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   const airdrops = [
-    { name: 'TeleBird', link: 'https://auliaramadhan20.github.io/teleBird/' },
+    { name: 'TeleBird', link: 'https://t.me/teleBirdss_bot' },
   ];
 
   return (
