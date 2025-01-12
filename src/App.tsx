@@ -2,9 +2,7 @@ import './App.css';
 
 function App() {
   const airdrops = [
-    { name: 'Airdrop 1', link: 'https://t.me/airdrop1' },
-    { name: 'Airdrop 2', link: 'https://t.me/airdrop2' },
-    { name: 'Airdrop 3', link: 'https://t.me/airdrop3' },
+    { name: 'TeleBird', link: 'https://auliaramadhan20.github.io/teleBird/' },
   ];
 
   return (
@@ -29,7 +27,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>✨ Dibuat dengan ❤️ oleh Tim Airdrop Hunter ✨</p>
+        <p>✨ Dibuat dengan ╭∩╮( •̀_•́ )╭∩╮ oleh Tim Pejuang Subuh✨</p>
       </footer>
     </div>
   );
